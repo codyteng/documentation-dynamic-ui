@@ -4,8 +4,108 @@
 <H1>Dynamic UI - Check Box Component</H1>
 </head>
 
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;width: 1000px}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-hgcj{font-weight:bold;text-align:center}
+.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-yw4l{vertical-align:top}
+</style>
+
 <body>
-	<p>
-	
+<img src="img/component_checkbox.png" style="width:141;height:288;">
+	<h3>Checkbox Component</h3>
+  <table class="tg">
+  <tr>
+    <th class="tg-hgcj">Properties</th>
+    <th class="tg-hgcj">Description</th>
+    <th class="tg-hgcj">Variable Type</th>
+    <th class="tg-amwm">Mandatory<br>(Y / N)</th>
+    <th class="tg-hgcj">Best Practices</th>
+    <th class="tg-hgcj">Sample Values</th>
+  </tr>
+  <tr>
+    <td class="tg-031e">boxId</td>
+    <td class="tg-031e">Unique ID assign to each component</td>
+    <td class="tg-031e">int</td>
+    <td class="tg-baqh">Y</td>
+    <td class="tg-031e">1. 1 to 6 digits of integer value<br>2. do not reuse same ID within same UI</td>
+    <td class="tg-031e">1, 1005, 98001</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">boxTag</td>
+    <td class="tg-031e">Type of UI component using</td>
+    <td class="tg-031e">String</td>
+    <td class="tg-baqh">Y</td>
+    <td class="tg-031e">pre-defined in component template</td>
+    <td class="tg-031e">checkbox</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">label</td>
+    <td class="tg-031e">Text view to display message of the checkbox</td>
+    <td class="tg-031e">String</td>
+    <td class="tg-baqh">Y</td>
+    <td class="tg-031e">keep label short and meaningful</td>
+    <td class="tg-031e">This is chcekbox</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">checked</td>
+    <td class="tg-031e">Switch to control the status of checkbox</td>
+    <td class="tg-031e">boolean</td>
+    <td class="tg-baqh">Y</td>
+    <td class="tg-031e">set default to false</td>
+    <td class="tg-031e">true, false</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">gravity</td>
+    <td class="tg-031e">Relationship of this component to the parent layout</td>
+    <td class="tg-031e">String</td>
+    <td class="tg-baqh">Y</td>
+    <td class="tg-031e">set default to left</td>
+    <td class="tg-031e">left, right, center</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">textPosition</td>
+    <td class="tg-031e">Position of text to the checkbox</td>
+    <td class="tg-031e">String</td>
+    <td class="tg-baqh">Y</td>
+    <td class="tg-031e">set default to right</td>
+    <td class="tg-031e">right</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">label</td>
+    <td class="tg-031e">Text view to display message of the checkbox</td>
+    <td class="tg-031e">String</td>
+    <td class="tg-baqh">Y</td>
+    <td class="tg-031e">keep label short and meaningful</td>
+    <td class="tg-031e">This is chcekbox</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">mandatory</td>
+    <td class="tg-031e">If turned on, at least one item must be selected</td>
+    <td class="tg-031e">boolean</td>
+    <td class="tg-baqh">N</td>
+    <td class="tg-031e">set false as default value</td>
+    <td class="tg-031e">true, false</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">mandatoryMessage</td>
+    <td class="tg-031e">This message will be displayed when we perform mandatory field checking</td>
+    <td class="tg-031e">String</td>
+    <td class="tg-baqh">N</td>
+    <td class="tg-031e">meaningful message, this field only requierd if mandatory is set to true</td>
+    <td class="tg-031e">Please check the checkbox to proceed</td>
+  </tr>
+
+  </table>
+  </br>
+</br>
+</br>
+</br>
+</br>
+</br>
 </body>
 </html>
