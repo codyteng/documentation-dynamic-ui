@@ -1,11 +1,109 @@
 <html>
 <head>
 <a href="index.html">back</a>
-<H1>Dynamic UI - Input Text Component</H1>
+<H1>Dynamic UI - Text Input Component</H1>
 </head>
 
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;width: 1000px}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-hgcj{font-weight:bold;text-align:center}
+.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-yw4l{vertical-align:top}
+</style>
+
 <body>
-	<p>
-	
+<img src="img/component_textinput.png" style="width:141;height:288;">
+	<h3>Text Input Component</h3>
+  <table class="tg">
+  <tr>
+    <th class="tg-hgcj">Properties</th>
+    <th class="tg-hgcj">Description</th>
+    <th class="tg-hgcj">Variable Type</th>
+    <th class="tg-amwm">Mandatory<br>(Y / N)</th>
+    <th class="tg-hgcj">Best Practices</th>
+    <th class="tg-hgcj">Sample Values</th>
+  </tr>
+  <tr>
+    <td class="tg-031e">boxId</td>
+    <td class="tg-031e">Unique ID assign to each component</td>
+    <td class="tg-031e">int</td>
+    <td class="tg-baqh">Y</td>
+    <td class="tg-031e">1. 1 to 6 digits of integer value<br>2. do not reuse same ID within same UI</td>
+    <td class="tg-031e">1, 1005, 98001</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">boxTag</td>
+    <td class="tg-031e">Type of UI component using</td>
+    <td class="tg-031e">String</td>
+    <td class="tg-baqh">Y</td>
+    <td class="tg-031e">pre-defined in component template</td>
+    <td class="tg-031e">input</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">header</td>
+    <td class="tg-031e">Label of the drop down menu</td>
+    <td class="tg-031e">String</td>
+    <td class="tg-baqh">N</td>
+    <td class="tg-031e">1. keep header short and meaningful<br>2. less than 25 characters, if extra information required, put them into "info" properties</td>
+    <td class="tg-031e">Title, Country</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">inputType</td>
+    <td class="tg-031e">Label of the drop down menu</td>
+    <td class="tg-031e">String</td>
+    <td class="tg-baqh">Y</td>
+    <td class="tg-031e">decide if the input are letters or numbers or combination</td>
+    <td class="tg-031e">text, amount</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">info</td>
+    <td class="tg-yw4l">Create an info button next to header, a message toast will be shown upon click</td>
+    <td class="tg-yw4l">String</td>
+    <td class="tg-baqh">N</td>
+    <td class="tg-yw4l">short and meaningful because it will disappear in a very short time frame</td>
+    <td class="tg-yw4l">Username must consist of letters and numbers.</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">hint</td>
+    <td class="tg-yw4l">A grey text displayed at the back of text input to<br>hint user what to input</td>
+    <td class="tg-yw4l">String</td>
+    <td class="tg-baqh">N</td>
+    <td class="tg-yw4l">short and meaningful</td>
+    <td class="tg-yw4l">Please enter</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">mandatory</td>
+    <td class="tg-031e">If turned on, at least one item must be selected</td>
+    <td class="tg-031e">boolean</td>
+    <td class="tg-baqh">N</td>
+    <td class="tg-031e">set false as default value</td>
+    <td class="tg-031e">true, false</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">mandatoryMessage</td>
+    <td class="tg-031e">This message will be displayed when we perform mandatory field checking</td>
+    <td class="tg-031e">String</td>
+    <td class="tg-baqh">N</td>
+    <td class="tg-031e">meaningful message, this field only requierd if mandatory is set to true</td>
+    <td class="tg-031e">Description can't be empty</td>
+  </tr>
+
+  </table>
+  </br>
+</br>
+</br>
+</br>
+</br>
+</br>
 </body>
 </html>
+
+
+
+
+
+
+
