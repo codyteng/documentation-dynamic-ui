@@ -4,8 +4,87 @@
 <H1>Dynamic UI - Text View Component</H1>
 </head>
 
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;width: 1000px}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-hgcj{font-weight:bold;text-align:center}
+.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-yw4l{vertical-align:top}
+</style>
+
 <body>
-	<p>
-	
+<img src="img/component_textview.png" style="width:141;height:288;">
+	<h3>Text View Component</h3>
+  <table class="tg">
+  <tr>
+    <th class="tg-hgcj">Properties</th>
+    <th class="tg-hgcj">Description</th>
+    <th class="tg-hgcj">Variable Type</th>
+    <th class="tg-amwm">Mandatory<br>(Y / N)</th>
+    <th class="tg-hgcj">Best Practices</th>
+    <th class="tg-hgcj">Sample Values</th>
+  </tr>
+  <tr>
+    <td class="tg-031e">step</td>
+    <td class="tg-031e">Step counts that will display on top of the layout to indicate users</td>
+    <td class="tg-031e">String</td>
+    <td class="tg-baqh">Y</td>
+    <td class="tg-031e">show current step out of total steps</td>
+    <td class="tg-031e">Step 2 / 3</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">transactionId</td>
+    <td class="tg-031e">Transaction ID will not be shown to user,<br>it will then pass back to server to carry out transaction</td>
+    <td class="tg-031e">String</td>
+    <td class="tg-baqh">Y</td>
+    <td class="tg-031e">do not modify the content from server</td>
+    <td class="tg-031e">1234-5678-9012</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">contents</td>
+    <td class="tg-031e">The content of the UI, data display divide to left and right</td>
+    <td class="tg-031e">jsonArray</td>
+    <td class="tg-baqh">Y</td>
+    <td class="tg-031e">must have at least 1 set of data<br>refer below Contents</td>
+    <td class="tg-031e">1234-5678-9012</td>
+  </tr>
+  </table>
+
+  <h3>Contents</h3>
+  <table class="tg">
+  <tr>
+    <th class="tg-hgcj">Properties</th>
+    <th class="tg-hgcj">Description</th>
+    <th class="tg-hgcj">Variable Type</th>
+    <th class="tg-amwm">Mandatory<br>(Y / N)</th>
+    <th class="tg-hgcj">Best Practices</th>
+    <th class="tg-hgcj">Sample Values</th>
+  </tr>
+  <tr>
+    <td class="tg-031e">fieldL</td>
+    <td class="tg-031e">Text to show on the left field</td>
+    <td class="tg-031e">String</td>
+    <td class="tg-baqh">Y</td>
+    <td class="tg-031e">less than 30 characters</td>
+    <td class="tg-031e">Account Number</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">fieldR</td>
+    <td class="tg-031e">Text to show on the right field</td>
+    <td class="tg-031e">String</td>
+    <td class="tg-baqh">Y</td>
+    <td class="tg-031e">less than 50 characters</td>
+    <td class="tg-031e">1098550 - Kenny</td>
+  </tr>
+  </table>
+  </br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
 </body>
 </html>
