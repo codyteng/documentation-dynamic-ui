@@ -1,0 +1,170 @@
+<html>
+<head>
+<a href="index.html">back</a>
+<H1>Dynamic UI - Drop Down Component</H1>
+</head>
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;width: 1000px}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-hgcj{font-weight:bold;text-align:center}
+.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-yw4l{vertical-align:top}
+</style>
+
+<body>
+	<p>
+  <h3>Drop Down Component</h3>
+  <table class="tg">
+  <tr>
+    <th class="tg-hgcj">Properties</th>
+    <th class="tg-hgcj">Description</th>
+    <th class="tg-hgcj">Variable Type</th>
+    <th class="tg-amwm">Mandatory<br>(Y / N)</th>
+    <th class="tg-hgcj">Best Practices</th>
+    <th class="tg-hgcj">Sample Values</th>
+  </tr>
+  <tr>
+    <td class="tg-031e">boxId</td>
+    <td class="tg-031e">Unique ID assign to each component</td>
+    <td class="tg-031e">int</td>
+    <td class="tg-baqh">Y</td>
+    <td class="tg-031e">1. 1 to 6 digits of integer value<br>2. do not reuse same ID within same UI</td>
+    <td class="tg-031e">1, 1005, 98001</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">boxTag</td>
+    <td class="tg-031e">Type of UI component using</td>
+    <td class="tg-031e">String</td>
+    <td class="tg-baqh">Y</td>
+    <td class="tg-031e">pre-defined in component template</td>
+    <td class="tg-031e">expandable</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">header</td>
+    <td class="tg-031e">Label of the drop down menu</td>
+    <td class="tg-031e">String</td>
+    <td class="tg-baqh">N</td>
+    <td class="tg-031e">1. keep header short and meaningful<br>2. less than 25 characters, if extra information required, put them into "info" properties</td>
+    <td class="tg-031e">Title, Country</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">mandatory</td>
+    <td class="tg-031e">If turned on, at least one item must be selected </td>
+    <td class="tg-031e">boolean</td>
+    <td class="tg-baqh">N</td>
+    <td class="tg-031e">set false as default value</td>
+    <td class="tg-031e">true, false</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">info</td>
+    <td class="tg-yw4l">Create an info button next to header, a message toast will be shown upon click</td>
+    <td class="tg-yw4l">String</td>
+    <td class="tg-baqh">N</td>
+    <td class="tg-yw4l">short and meaningful because it will disappear in a very short time frame</td>
+    <td class="tg-yw4l">Username must consist of letters and numbers.</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">influencesBoxId</td>
+    <td class="tg-yw4l">Box ID that will need to refresh if drop down item has changed</td>
+    <td class="tg-yw4l">int</td>
+    <td class="tg-baqh">N</td>
+    <td class="tg-yw4l">double check the box ID</td>
+    <td class="tg-yw4l">1, 1005, 98001</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">expanContents</td>
+    <td class="tg-yw4l">List of drop down items</td>
+    <td class="tg-yw4l">jsonArray</td>
+    <td class="tg-baqh">Y</td>
+    <td class="tg-yw4l">must consist of at least one item</td>
+    <td class="tg-yw4l">refer below Expand Contents</td>
+  </tr>
+</table>
+
+</br>
+</br>
+<h3>Expand Contents</h3>
+<table class="tg">
+  <tr>
+    <th class="tg-hgcj">Properties</th>
+    <th class="tg-hgcj">Description</th>
+    <th class="tg-hgcj">Variable Type</th>
+    <th class="tg-amwm">Mandatory<br>(Y / N)</th>
+    <th class="tg-hgcj">Best Practices</th>
+    <th class="tg-hgcj">Sample Values</th>
+  </tr>
+  <tr>
+    <td class="tg-031e">id</td>
+    <td class="tg-031e">Unique ID assign to each component</td>
+    <td class="tg-031e">int</td>
+    <td class="tg-baqh">Y</td>
+    <td class="tg-031e">1. 1 to 6 digits of integer value<br>2. do not reuse same ID within same UI</td>
+    <td class="tg-031e">1, 1005, 98001</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">name</td>
+    <td class="tg-031e">Drop down list item</td>
+    <td class="tg-031e">String</td>
+    <td class="tg-baqh">Y</td>
+    <td class="tg-031e">rearrange the list in alphabetic order first</td>
+    <td class="tg-031e">Malaysia, Indonesia</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">condition</td>
+    <td class="tg-031e">Consists of parent reference as well as the filter condition</td>
+    <td class="tg-031e">jsonArray</td>
+    <td class="tg-baqh">N</td>
+    <td class="tg-031e">multiple condition can be applied</td>
+    <td class="tg-031e">refer to Conditions table below</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">subItem</td>
+    <td class="tg-yw4l">New drop down will generate below, the selection</td>
+    <td class="tg-yw4l">jsonArray</td>
+    <td class="tg-baqh">N</td>
+    <td class="tg-yw4l">must consist of at least one item</td>
+    <td class="tg-yw4l">refer to Expand Contents, can be nested</td>
+  </tr>
+</table>
+
+</br>
+</br>
+<h3>Conditions</h3>
+<table class="tg">
+  <tr>
+    <th class="tg-hgcj">Properties</th>
+    <th class="tg-hgcj">Description</th>
+    <th class="tg-hgcj">Variable Type</th>
+    <th class="tg-amwm">Mandatory<br>(Y / N)</th>
+    <th class="tg-hgcj">Best Practices</th>
+    <th class="tg-hgcj">Sample Values</th>
+  </tr>
+  <tr>
+    <td class="tg-031e">boxId</td>
+    <td class="tg-031e">Unique ID of it's parent that it refers to</td>
+    <td class="tg-031e">int</td>
+    <td class="tg-baqh">Y</td>
+    <td class="tg-031e">1. 1 to 6 digits of integer value<br>2. double check if the the ID belongs to it's parent</td>
+    <td class="tg-031e">1, 1005, 98001</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">selectedId</td>
+    <td class="tg-031e">Filter list to match the appearance of the items<br>based on the selection user made in parent drop down</td>
+    <td class="tg-031e">int</td>
+    <td class="tg-baqh">N</td>
+    <td class="tg-031e">1. 1 to 6 digits of integer value<br>2. confirm parent's Unique ID</td>
+    <td class="tg-031e">1, 1005, 98001</td>
+  </tr>
+</table>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</body>
+</html>
